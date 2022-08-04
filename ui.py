@@ -1,6 +1,6 @@
 def choice_operation():
-    print('''Выберете вариант использования справочника: \n1 - Добавить человека \n2 - Просмотр справочника \n3 - Выход''')
-    operation = correct_input(('1', '2', '3'))
+    print('''Выберете вариант использования справочника: \n1 - Добавить человека \n2 - Просмотр справочника \n3 - Импорт данных из файла \n4 - Экспорт данных в файл \n5 - Выход''')
+    operation = correct_input(('1', '2', '3', '4', '5'))
     return operation
 
 def correct_input(num):
@@ -13,7 +13,7 @@ def correct_input(num):
             print('Некорректный выбор, повторите ввод')
     return choise
 
-def input_PC():
+def input_user():
     surname = input('Введите фамилию: ')
     name = input('Введите имя: ')
     phone = input('Введите телефон: ')
